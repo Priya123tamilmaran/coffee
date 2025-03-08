@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            padding:50px;
+            border-color:black;
+            margin-left:80%; 
+           border-radius: 10px;
+           width:20px;
+            }
+            div{
+                margin-top:10% ;
+                margin-right:50%;
+
+            }
+            input{
+                border-radius: 10px;
+                height: 20px;
+               
+              }
+</style>
+</head>
+<body>
+    <script>
+        function validate(){
+            var text=document.getElementById("text").value;
+            var regx= /([A-Z 0-9_\-\.]+)@([a-z]+)[\.]([a-z]{2,3})/;
+
+            var text=document.getElementById("text1").value;
+            var regx= /([a-z 0-9])/;
+        
+        if(regx.test(text,text1)){
+            document.getElementById("lbtext").innerHTML="valid";
+            document.getElementById("lbtext").style.visiblity="visible";
+            document.getElementById("lbtext").style.color="green";
+        }
+        else{
+            document.getElementById("lbtext").innerHTML="invalid";
+            document.getElementById("lbtext").style.visiblity="visible";
+            document.getElementById("lbtext").style.color="red";
+        }
+        }
+</script>
+<div>
+        <fieldset>
+            <form>
+  <center><h1>LOGIN</h1>
+   <h3><input id="text"placeholder="Email"></h3>
+   <h3><input id="text1"placeholder="Password"></h3>
+   <label id="lbtext" style=color:red; visiblity:hidden>Invalid</label>
+   <button onclick="validate()"type="button">submit</button>
+   <button>Reset</button>
+   
+
+  <!-- <h3> Password <input type="text"></h3>
+   <button>Reset</button>           <button>Sign in</button> -->
+</form>
+</center>
+</fieldset>
+</div>
+</body>
+</html>

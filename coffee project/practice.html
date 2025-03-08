@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div class="card" style="width: 18rem;">
+        <img src="27.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+</body>
+</html>
+
+<!-- cart -->
+<!--  <div class="cart-items-container">
+            <div class="cart-item">
+                 <span class="fas fa-times"></span>  
+                <img src="#" alt="">
+                <div class="content">
+                <h3>cart item 01</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="#" alt="">
+            <div class="content">
+            <h3>cart item 02</h3>
+            <div class="price">$15.99/-</div>
+        </div>
+    </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="#" alt="">
+            <div class="content">
+            <h3>cart item 03</h3>
+            <div class="price">$15.99/-</div>
+        </div>
+    </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="#" alt="">
+            <div class="content">
+            <h3>cart item 04</h3>
+            <div class="price">$15.99/-</div>
+        </div>
+    </div>
+       <a href="#" class="btn">chekout now</a>--> 
+
+
+       <!--css cart  -->
+       .header .cart-items-container{
+        position: absolute;
+         top:100%; right: -100%;
+        height:calc(100vh - 9.5rem);
+        width:35rem;
+        background:#fff;
+        padding:0 1.5rem;
+    
+    }
+    .header .cart-items-container.active{
+        right: 0;
+    }
+    .header .cart-items-container .cart-item{
+        position:relative;
+        margin:2rem 0;
+        display:flex;
+        align-items:center;
+        gap:1.5rem;
+    
+    }
+    
+        .header .cart-items-container .cart-item .fa-times{
+        position: absolute;
+        top:1rem; right: 1rem;
+        font-size:2rem;
+        cursor:pointer;
+        color:var(--black);
+    }
+    .header .cart-items-container .cart-item .fa-times:hover{
+        color:var(--main-color);
+    }
+    
+    
+    .header .cart-items-container .cart-item .content h3{
+        font-size: 2rem;
+        color:var(--black);
+        padding-bottom: .5rem;
+    }
+    .header .cart-items-container .cart-item .content .price{
+        font-size:1.5rem;
+        color:var(--main-color);
+        }
+    .header .cart-items-container .btn{
+        width:100%;
+        text-align: center;
+    } */
+    
+    <!-- menu--><section class="menu" id="menu">
+
+    <h1 class="heading">our <span>menu</span></h1>
+
+    <div class="box-container">
+
+      <div class="box">
+          <img src="27.png" alt="">
+          <h3>tast and healty</h3>
+          <div class="price">$15.99 <span>20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+      </div>
+
+      <div class="box">
+          <img src="19.png" alt="">
+          <h3>tast and healty</h3>
+          <div class="price">$15.99 <span>20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+      </div>
+
+       <div class="box">
+          <img src="18.png" alt="">
+          <h3>tast and healty</h3>
+          <div class="price">$15.99 <span>20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+      </div>
+
+      <div class="box">
+          <img src="21.png" alt="">
+          <h3>tast and healty</h3>
+          <div class="price">$15.99 <span>20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+      </div>
+
+      <div class="box">
+          <img src="18.png" alt="">
+          <h3>tast and healty</h3>
+          <div class="price">$15.99 <span>20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+      </div>
+
+      <div class="box">
+          <img src="21.png" alt="">
+          <h3>tast and healty</h3>
+          <div class="price">$15.99 <span>20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+      </div>
+    </div>
+</section>
+
+<!-- product -->
+<section class="products" id="products">
+    <h1 class="heading">our <span>products</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+            <img src="11.png" alt="">
+        </div>
+        <div class="content">
+            <h3>fresh coffee</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+           <div class="price">$15.99 <span>$20.99</span></div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+     </div>
+     <div class="image">
+        <img src="10.png" alt="">
+     </div>
+     <div class="content">
+        <h3>fresh coffee</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price">$15.99 <span>$20.99</span></div>
+    </div>
+</div>
+
+ <div class="box"> 
+    <div class="icons">
+    <a href="#" class="fas fa-shopping-cart"></a>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-eye"></a>
+ </div>
+ <div class="image">
+    <img src="pow1.png" alt="">
+ </div>
+  <div class="content">
+      <h3>fresh coffee</h3>
+        <div class="stars">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star-half-alt"></i>
+        </div>
+      <div class="price">$15.99 <span>$20.99</span></div>
+   </div>
+</div>
+
+</div>
+
+</section>
+
+<!-- product css -->
+/* .products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap:1.5rem;
+}
+.products .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding:2rem;
+}
+.products .box-container .box .icons a{
+    height:5rem;
+    width:5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border:var(--border);
+    color: #fff;
+    margin:.3rem;
+}
+.products .box-container .box .icons a:hover{
+    background:var(--main-color);
+
+}
+.products .box-container .box .image{
+    padding:2.5rem 0;
+}
+.products .box-container .box .image img{
+    height:25rem;
+}
+.products .box-container .box  .content h3{
+    color:#fff;
+}
+.products .box-container .box .content .stars{
+    padding:1.5rem;
+}
+.products .box-container .box .content .stars i{
+    font-size:1.7rem;
+    color:var(--main-color);
+}
+.products .box-container .box .content .price{
+    color:#fff;
+    font-size: 2.5rem;
+}
+.products .box-container .box .content .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}  */
+
